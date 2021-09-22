@@ -776,6 +776,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/caveat@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/caveat/-/caveat-4.5.0.tgz#9dcd92a84290e73c90622ad1dbbe37372e587177"
+  integrity sha512-G9Si3ulDpsykWLJHrTazQexOfed/IJtdttHTfQPSC2UofY9TpgIeZPMashqUjHPjNxLolEaseXVHJNBv08zTKQ==
+
 "@fontsource/open-sans@^4.5.0":
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.0.tgz#e6d05dfdfe74580001010302f9c418067b45a6a9"

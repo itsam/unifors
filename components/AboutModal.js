@@ -8,24 +8,20 @@ import {
   ModalCloseButton,
   Button,
   Text,
+  Link,
+  Center,
   useDisclosure,
 } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { CheckIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import Image from "next/image";
 
 export const AboutModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button
-        rounded={"full"}
-        size={"lg"}
-        fontWeight={"normal"}
-        px={6}
-        rightIcon={<ArrowForwardIcon h={4} w={4} color={"gray.500"} />}
-        onClick={onOpen}
-      >
-        About the project
-      </Button>
+      <Link fontStyle="italic" fontWeight="black" onClick={onOpen}>
+        UNIFORS project
+      </Link>
 
       <Modal isOpen={isOpen} onClose={onClose} size="lg">
         <ModalOverlay />
@@ -33,26 +29,36 @@ export const AboutModal = () => {
           <ModalHeader>About UNIFORS</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
+            <Center>
+              <Image
+                src="/images/logo_unifors.png"
+                width={250}
+                height={250}
+                alt="UNIFORS logo capital U"
+              />
+            </Center>
             <Text>
               UNIversities for Future wORk Skills 2020 brings together a strong
-              partnership (5 universities from Poland, Romania, Belgium, Spain
-              and Portugal and two SMEs one from Spain and one from Greece),
-              aiming to increase students chances for a faster and better
-              insertion on the labor market by improving their soft skills.
+              partnership (five universities from Poland, Romania, Belgium,
+              Spain and Portugal and two SMEs one from Spain and one from
+              Greece), aiming to increase students chances for a faster and
+              better insertion on the labor market by improving their soft
+              skills.
             </Text>
             <Text mt="5">
               The project will investigate employers, students and teaching
               staff perspective on specific soft skills gap and collect existing
               best practices in the field at EU level.
             </Text>
-            <Text fontWeight="bold" mt="5">
-              <a
-                target="_blank"
+            <Text mt="5">
+              <Link
                 href="http://www.uwm.edu.pl/unifors2020/"
-                rel="noopener noreferrer"
+                fontWeight="bold"
+                isExternal
               >
-                Visit the official UNIFORS page to learn more
-              </a>
+                Visit the official UNIFORS page
+                <ExternalLinkIcon mx="5px" mb="5px" />
+              </Link>
             </Text>
           </ModalBody>
 

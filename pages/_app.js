@@ -4,6 +4,7 @@ import { SkipNavLink } from "@chakra-ui/skip-nav";
 import theme from "../theme";
 import "@fontsource/open-sans/700.css";
 import "@fontsource/raleway/400.css";
+import "@fontsource/caveat/700.css";
 
 function MyApp({ Component, pageProps }) {
   return (

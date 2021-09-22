@@ -2,6 +2,7 @@ import React from "react";
 
 import {
   chakra,
+  Text,
   Box,
   Flex,
   useColorModeValue,
@@ -31,17 +32,17 @@ export const Benefits = () => {
           </Icon>
         </Flex>
         <Box ml={4}>
-          <chakra.dt
+          <Text
             fontSize="lg"
             fontWeight="bold"
             lineHeight="6"
             color={useColorModeValue("gray.900")}
           >
             {props.title}
-          </chakra.dt>
-          <chakra.dd mt={2} color={useColorModeValue("gray.500", "gray.400")}>
+          </Text>
+          <Text mt={2} color={useColorModeValue("gray.800", "gray.200")}>
             {props.children}
-          </chakra.dd>
+          </Text>
         </Box>
       </Flex>
     );
@@ -70,7 +71,7 @@ export const Benefits = () => {
         >
           <Box alignSelf="start">
             <chakra.h2
-              color={useColorModeValue("blue.500")}
+              color={useColorModeValue("blue.600")}
               fontWeight="semibold"
               textTransform="uppercase"
               letterSpacing="wide"
@@ -91,8 +92,7 @@ export const Benefits = () => {
             <chakra.p
               mb={6}
               fontSize={{ base: "lg", md: "xl" }}
-              //   textAlign={{ base: "center", sm: "left" }}
-              color={useColorModeValue("gray.600", "gray.500")}
+              color={useColorModeValue("gray.800", "gray.200")}
             >
               40 hrs face to face, 35 hrs preparation and individual study at
               Haute Ecole de la Province de Liège (HEPL) in Belgium. <br />

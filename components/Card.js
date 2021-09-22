@@ -13,7 +13,7 @@ import {
 
 export const Card = (props) => {
   return (
-    <Center py={6}>
+    <Center py={[6, 0]}>
       <Box
         maxW={"md"}
         w={"full"}
