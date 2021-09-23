@@ -14,8 +14,8 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { CheckIcon } from "@chakra-ui/icons";
 import Head from "next/head";
+import { CheckIcon } from "@chakra-ui/icons";
 import { AboutModal } from "./AboutModal";
 
 const Arrow = createIcon({
@@ -105,7 +105,7 @@ export const Hero = () => {
                   fontWeight={"normal"}
                   px={6}
                   rightIcon={<CheckIcon h={4} w={4} />}
-                  // onClick={onOpen}
+                  onClick={() => router.push("/self-evaluation")}
                 >
                   {buttonText}
                 </Button>

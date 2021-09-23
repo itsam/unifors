@@ -3971,6 +3971,11 @@ supports-color@^8.0.0:
   dependencies:
     has-flag "^4.0.0"
 
+survey-react@^1.8.68:
+  version "1.8.68"
+  resolved "https://registry.yarnpkg.com/survey-react/-/survey-react-1.8.68.tgz#bf71070d82cba3a90147b78bc238a2b2e8da0651"
+  integrity sha512-OTw86u8JzfG2XvHQtvmdY1eiewadYHdg3jr+mo0gEtPEfRrRTtBRkgHdfZm++CZfSU9fjv8MkvGq740dmnqcjA==
+
 table@^6.0.9:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/table/-/table-6.7.1.tgz#ee05592b7143831a8c94f3cee6aae4c1ccef33e2"
