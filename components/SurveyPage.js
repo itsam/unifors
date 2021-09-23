@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
 import "survey-react/modern.css";
+import { Spinner, Center } from "@chakra-ui/react";
 
 const selfEvaluationSurvey = {
   title: "Individual assessment on soft skills",
@@ -296,15 +297,12 @@ function onValueChanged(survey) {
 }
 
 export function SurveyPage(props) {
-  useEffect(() => {
-    Survey.StylesManager.applyTheme("modern");
-  }, []);
-
-  Survey.JsonObject.metaData.addProperty("question", { name: "score:number" });
-  Survey.JsonObject.metaData.addProperty("itemvalue", { name: "score:number" });
+  const [loading, setLoading] = useState(true);
 
   let model = null;
   Survey.JsonObject.metaData.addProperty("question", { name: "score:number" });
+  Survey.JsonObject.metaData.addProperty("itemvalue", { name: "score:number" });
+
   switch (props.type) {
     case "finalEvaluation":
       model = new Survey.Model(selfEvaluationSurvey); //future ready
@@ -314,6 +312,17 @@ export function SurveyPage(props) {
       break;
   }
 
+  useEffect(() => {
+    Survey.StylesManager.applyTheme("modern");
+    setLoading(false);
+  }, [setLoading]);
+
+  if (loading)
+    return (
+      <Center>
+        <Spinner size="lg" />
+      </Center>
+    );
   return (
     <div className="container">
       {
@@ -322,12 +331,7 @@ export function SurveyPage(props) {
           model={model}
           locale="en"
           onComplete={sendDataToServer}
-          //data={props.data}
-          //onAfterRenderQuestion={onAfterRenderQuestion}
           onValueChanged={onValueChanged}
-          //css={myCss}
-          //showPreviewBeforeComplete="showAllQuestions"
-          //progressBarType="buttons"
         />
       }
     </div>
