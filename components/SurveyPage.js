@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect } from "react";
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
 import "survey-react/modern.css";
@@ -296,7 +296,10 @@ function onValueChanged(survey) {
 }
 
 export function SurveyPage(props) {
-  Survey.StylesManager.applyTheme("modern");
+  useEffect(() => {
+    Survey.StylesManager.applyTheme("modern");
+  }, []);
+
   Survey.JsonObject.metaData.addProperty("question", { name: "score:number" });
   Survey.JsonObject.metaData.addProperty("itemvalue", { name: "score:number" });
 
