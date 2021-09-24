@@ -10,6 +10,7 @@ import {
   Spacer,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { CaseStudyModal } from "./CaseStudyModal";
 
 export const Card = (props) => {
   return (
@@ -67,13 +68,12 @@ export const Card = (props) => {
 
           <Spacer />
           <Box align="right">
-            <Button
-              aria-label={`Open case study: ${props.name}`}
-              variant="outline"
-              size="sm"
-            >
-              See case study
-            </Button>
+            <CaseStudyModal
+              name={props.name}
+              image={props.image}
+              brief={props.brief}
+              contact={props.contact}
+            />
           </Box>
         </Stack>
       </Box>

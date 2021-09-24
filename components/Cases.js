@@ -3,6 +3,7 @@ import {
   Box,
   Heading,
   Container,
+  Button,
   Stack,
   Text,
   SimpleGrid,
@@ -10,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
+import { DownloadIcon } from "@chakra-ui/icons";
 
 import { Card } from "./Card";
 import { useRouter } from "next/router";
@@ -28,6 +30,37 @@ const data = [
     description: "Enriching daily life through phosphorus chemistry",
     num: "01",
     link: "https://www.prayon.com/en",
+    brief: (
+      <>
+        <Text pt="10">
+          Supporting Prayon's staff in the digital transformation by drawing up
+          an inventory of individual digital skills and by organizing training
+          adapted to each one to reach the expected level. This involves
+          changing the culture and raising staff awareness of the challenges of
+          this essential change. Prayon wants to implement a policy to avoid, as
+          much as possible, the digital split.
+        </Text>
+        <Button
+          rounded={"full"}
+          fontWeight={"normal"}
+          px={6}
+          mt={10}
+          rightIcon={<DownloadIcon h={4} w={4} />}
+          onClick={() =>
+            window.open(
+              "https://infalia.com/unifors_files/case-studies/prayon/Prayon_description.xlsx"
+            )
+          }
+        >
+          Download full description
+        </Button>
+      </>
+    ),
+    contact: (
+      <Text fontWeight="bold" mt="5">
+        Contact person: name, email
+      </Text>
+    ),
   },
   {
     name: "Technifutur",
@@ -42,6 +75,54 @@ const data = [
     description: "Competence Centre",
     num: "02",
     link: "https://technifutur.be",
+    brief: (
+      <>
+        <Text pt="10">
+          Untill August 2020, Technifutur's HR department was specially
+          dedicated to the payroll and administrative stuff with very limited
+          activities in soft HR. Our HR Director wants to develop the missing
+          soft domains such as recruitment & selection, on-boarding, learning &
+          development, social relationships, employee value proposition etc.,
+          based on DiSC model®
+        </Text>
+        <Button
+          rounded={"full"}
+          fontWeight={"normal"}
+          px={6}
+          mt={10}
+          w="xs"
+          rightIcon={<DownloadIcon h={4} w={4} />}
+          onClick={() =>
+            window.open(
+              "https://infalia.com/unifors_files/case-studies/technifutur/Technifutur_case_study_description.docx"
+            )
+          }
+        >
+          Download full description
+        </Button>
+        <Button
+          rounded={"full"}
+          fontWeight={"normal"}
+          px={6}
+          mt={2}
+          w="xs"
+          rightIcon={<DownloadIcon h={4} w={4} />}
+          onClick={() =>
+            window.open(
+              "https://infalia.com/unifors_files/case-studies/technifutur/Technifutur_presentation.pdf",
+              "_blank"
+            )
+          }
+        >
+          Download Technifutur presentation
+        </Button>
+      </>
+    ),
+    contact: (
+      <Text fontWeight="bold" mt="5">
+        Contact person: name, email
+      </Text>
+    ),
   },
   {
     name: "DHL",
@@ -53,6 +134,52 @@ const data = [
     description: "Easy worldwide shipping",
     num: "03",
     link: "https://www.dhlexpress.be/en/",
+    brief: (
+      <>
+        <Text pt="10">
+          DHL wants to improve employee experience in a hybrid working set up,
+          working both onsite and at home. We have the experience of working
+          fully onsite and fully remotely but we also need to understand which
+          challenges the hybrid model might bring along and which solutions we
+          can put in place to mitigate possible issues.
+        </Text>
+        <Button
+          rounded={"full"}
+          fontWeight={"normal"}
+          px={6}
+          mt={10}
+          w="xs"
+          rightIcon={<DownloadIcon h={4} w={4} />}
+          onClick={() =>
+            window.open(
+              "https://infalia.com/unifors_files/case-studies/dhl/DHL_case_study_description.docx"
+            )
+          }
+        >
+          Download full description
+        </Button>
+        <Button
+          rounded={"full"}
+          fontWeight={"normal"}
+          px={6}
+          mt={2}
+          w="xs"
+          rightIcon={<DownloadIcon h={4} w={4} />}
+          onClick={() =>
+            window.open(
+              "https://infalia.com/unifors_files/case-studies/dhl/DHL_presentation.pptx"
+            )
+          }
+        >
+          Download DHL presentation
+        </Button>
+      </>
+    ),
+    contact: (
+      <Text fontWeight="bold" mt="5">
+        Contact person: name, email
+      </Text>
+    ),
   },
   {
     name: (
@@ -73,6 +200,37 @@ const data = [
     description: "Leader in the Belgian gaming market",
     num: "04",
     link: "https://www.gaming1.com/en/",
+    brief: (
+      <>
+        <Text pt="10">
+          Gaming1 allows up to 50% remote working and have several tools to
+          allow its employess to stay connected. Often,we organize as many
+          social events as possible (BBQ - Teambuilding - Afterwork) so we can
+          get together, but how can we strenghen the sense of belonging to the
+          company among 450 employees in a hybrid workstyle?
+        </Text>
+        <Button
+          rounded={"full"}
+          fontWeight={"normal"}
+          px={6}
+          mt={10}
+          w="xs"
+          rightIcon={<DownloadIcon h={4} w={4} />}
+          onClick={() =>
+            window.open(
+              "https://infalia.com/unifors_files/case-studies/gaming1/Gaming1_presentation.pptx"
+            )
+          }
+        >
+          Download presentation (~70MB)
+        </Button>
+      </>
+    ),
+    contact: (
+      <Text fontWeight="bold" mt="5">
+        Contact person: name, email
+      </Text>
+    ),
   },
 ];
 
@@ -97,6 +255,8 @@ export const Cases = () => {
               description={caseStudy.description}
               num={caseStudy.num}
               link={caseStudy.link}
+              brief={caseStudy.brief}
+              contact={caseStudy.contact}
             />
           ))}
         </SimpleGrid>
