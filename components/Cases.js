@@ -33,12 +33,12 @@ const data = [
     brief: (
       <>
         <Text pt="10">
-          Supporting Prayon's staff in the digital transformation by drawing up
-          an inventory of individual digital skills and by organizing training
-          adapted to each one to reach the expected level. This involves
-          changing the culture and raising staff awareness of the challenges of
-          this essential change. Prayon wants to implement a policy to avoid, as
-          much as possible, the digital split.
+          Supporting Prayon&apos;s staff in the digital transformation by
+          drawing up an inventory of individual digital skills and by organizing
+          training adapted to each one to reach the expected level. This
+          involves changing the culture and raising staff awareness of the
+          challenges of this essential change. Prayon wants to implement a
+          policy to avoid, as much as possible, the digital split.
         </Text>
         <Button
           rounded={"full"}
@@ -78,12 +78,12 @@ const data = [
     brief: (
       <>
         <Text pt="10">
-          Untill August 2020, Technifutur's HR department was specially
+          Untill August 2020, Technifutur&apos;s HR department was specially
           dedicated to the payroll and administrative stuff with very limited
           activities in soft HR. Our HR Director wants to develop the missing
-          soft domains such as recruitment & selection, on-boarding, learning &
-          development, social relationships, employee value proposition etc.,
-          based on DiSC model®
+          soft domains such as recruitment &amp; selection, on-boarding,
+          learning &amp; development, social relationships, employee value
+          proposition etc., based on DiSC model®
         </Text>
         <Button
           rounded={"full"}
@@ -120,7 +120,7 @@ const data = [
     ),
     contact: (
       <Text fontWeight="bold" mt="5">
-        Contact person: name, email
+        Contact person: Carole Demoulin, carole.demoulin@technifutur.be
       </Text>
     ),
   },
@@ -228,7 +228,7 @@ const data = [
     ),
     contact: (
       <Text fontWeight="bold" mt="5">
-        Contact person: name, email
+        Contact person: Ophélie Demoulin, ophelie.Demoulin@gaming1.com
       </Text>
     ),
   },
