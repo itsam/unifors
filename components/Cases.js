@@ -41,7 +41,7 @@ const data = [
           policy to avoid, as much as possible, the digital split.
         </Text>
 
-        {/* <Button
+        <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -54,12 +54,12 @@ const data = [
           }
         >
           Download full description
-        </Button> */}
+        </Button>
       </>
     ),
     contact: (
       <Text fontWeight="bold" mt="5">
-        Contact person: name, email
+        Contact person: Philippe Bertin, PBertin@prayon.com
       </Text>
     ),
   },
@@ -87,7 +87,7 @@ const data = [
           proposition etc., based on DiSC model®
         </Text>
 
-        {/* <Button
+        <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -117,7 +117,7 @@ const data = [
           }
         >
           Download Technifutur presentation
-        </Button> */}
+        </Button>
       </>
     ),
     contact: (
@@ -145,7 +145,7 @@ const data = [
           challenges the hybrid model might bring along and which solutions we
           can put in place to mitigate possible issues.
         </Text>
-        {/* <Button
+        <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -174,12 +174,12 @@ const data = [
           }
         >
           Download DHL presentation
-        </Button> */}
+        </Button>
       </>
     ),
     contact: (
       <Text fontWeight="bold" mt="5">
-        Contact person: name, email
+        Contact person: Cindy Muyters, Cindy.Muyters@dhl.com
       </Text>
     ),
   },
@@ -211,7 +211,7 @@ const data = [
           get together, but how can we strenghen the sense of belonging to the
           company among 450 employees in a hybrid workstyle?
         </Text>
-        {/* <Button
+        <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -225,7 +225,7 @@ const data = [
           }
         >
           Download presentation (~70MB)
-        </Button> */}
+        </Button>
       </>
     ),
     contact: (
