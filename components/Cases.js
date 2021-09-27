@@ -40,7 +40,8 @@ const data = [
           challenges of this essential change. Prayon wants to implement a
           policy to avoid, as much as possible, the digital split.
         </Text>
-        <Button
+
+        {/* <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -53,7 +54,7 @@ const data = [
           }
         >
           Download full description
-        </Button>
+        </Button> */}
       </>
     ),
     contact: (
@@ -85,7 +86,8 @@ const data = [
           learning &amp; development, social relationships, employee value
           proposition etc., based on DiSC model®
         </Text>
-        <Button
+
+        {/* <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -115,7 +117,7 @@ const data = [
           }
         >
           Download Technifutur presentation
-        </Button>
+        </Button> */}
       </>
     ),
     contact: (
@@ -143,7 +145,7 @@ const data = [
           challenges the hybrid model might bring along and which solutions we
           can put in place to mitigate possible issues.
         </Text>
-        <Button
+        {/* <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -172,7 +174,7 @@ const data = [
           }
         >
           Download DHL presentation
-        </Button>
+        </Button> */}
       </>
     ),
     contact: (
@@ -209,7 +211,7 @@ const data = [
           get together, but how can we strenghen the sense of belonging to the
           company among 450 employees in a hybrid workstyle?
         </Text>
-        <Button
+        {/* <Button
           rounded={"full"}
           fontWeight={"normal"}
           px={6}
@@ -223,7 +225,7 @@ const data = [
           }
         >
           Download presentation (~70MB)
-        </Button>
+        </Button> */}
       </>
     ),
     contact: (
