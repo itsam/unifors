@@ -30,12 +30,12 @@ export const Features = () => {
             rightIcon={<DownloadIcon h={4} w={4} />}
             onClick={() =>
               window.open(
-                "https://infalia.com/unifors_files/UNIFORS_ISPS_Programme.pdf",
+                "https://infalia.com/unifors_files/UNIFORS_ISPS_Programme_v2.pdf",
                 "_blank"
               )
             }
           >
-            Download the official agenda
+            Download the official agenda ** updated on Wed 16.15 **
           </Button>
         </Center>
         <Text
