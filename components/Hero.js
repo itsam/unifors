@@ -127,7 +127,7 @@ export const Hero = () => {
                     top={"0px"}
                     transform={"rotate(16deg)"}
                   >
-                    Students start here!
+                    for Friday
                   </Text>
                 </Box>
               </Stack>

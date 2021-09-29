@@ -5,7 +5,7 @@ import "survey-react/modern.css";
 import { Spinner, Center } from "@chakra-ui/react";
 
 const selfEvaluationSurvey = {
-  title: "Individual assessment on soft skills",
+  title: "Individual assessment on soft skills (repeated end of the week)",
   description: "UNIFORS project (Erasmus+)",
   pages: [
     {
@@ -259,7 +259,7 @@ const selfEvaluationSurvey = {
       ],
     },
   ],
-  cookieName: "unifors_self_evaluation_survey",
+  cookieName: "unifors_self_evaluation_survey_final",
   showQuestionNumbers: "off",
   clearInvisibleValues: "none",
 };
@@ -267,7 +267,10 @@ const selfEvaluationSurvey = {
 let score = 0;
 
 function sendDataToServer(survey) {
-  survey.sendResult("f24e7e6f-780c-44f0-a21a-3d6345f79f15");
+  //initially
+  //survey.sendResult("f24e7e6f-780c-44f0-a21a-3d6345f79f15");
+  //at the end of the week
+  survey.sendResult("f869b761-3edc-4d1e-b136-0bad1b1c5ff0");
 }
 
 function onValueChanged(survey) {
