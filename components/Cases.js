@@ -230,7 +230,7 @@ const data = [
     ),
     contact: (
       <Text fontWeight="bold" mt="5">
-        Contact person: Ophélie Demoulin, ophelie.Demoulin@gaming1.com
+        Contact person: Adrien Ludovico, adrien.ludovico@gaming1.com
       </Text>
     ),
   },
