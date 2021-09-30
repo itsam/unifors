@@ -49,12 +49,12 @@ export const Features = () => {
             rightIcon={<DownloadIcon h={4} w={4} />}
             onClick={() =>
               window.open(
-                "https://infalia.com/unifors_files/UNIFORS_Evaluation_Grid_for_Study_cases.pdf",
+                "https://infalia.com/unifors_files/UNIFORS_Evaluation_Grid_for_C3_V03_MC.docx",
                 "_blank"
               )
             }
           >
-            Download the evaluation grid
+            Download the evaluation grid (docx)
           </Button>
         </Center>
         <Text
