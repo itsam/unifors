@@ -35,7 +35,26 @@ export const Features = () => {
               )
             }
           >
-            Download the official agenda ** updated on Wed 16.15 **
+            Download the official agenda (updated)
+          </Button>
+        </Center>
+        <Center>
+          <Button
+            w="lg"
+            rounded={"full"}
+            colorScheme="red"
+            size={"lg"}
+            fontWeight={"normal"}
+            px={6}
+            rightIcon={<DownloadIcon h={4} w={4} />}
+            onClick={() =>
+              window.open(
+                "https://infalia.com/unifors_files/UNIFORS_Evaluation_Grid_for_Study_cases.pdf",
+                "_blank"
+              )
+            }
+          >
+            Download the evaluation grid
           </Button>
         </Center>
         <Text
