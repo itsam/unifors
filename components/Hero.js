@@ -127,7 +127,7 @@ export const Hero = () => {
                     top={"0px"}
                     transform={"rotate(16deg)"}
                   >
-                    for Friday
+                    post ISP
                   </Text>
                 </Box>
               </Stack>
