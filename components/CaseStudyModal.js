@@ -7,11 +7,11 @@ import {
   ModalBody,
   ModalCloseButton,
   Button,
-  Text,
-  Link,
-  Center,
+  Flex,
+  Box,
   useDisclosure,
 } from "@chakra-ui/react";
+
 import { CheckIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 
@@ -28,19 +28,22 @@ export const CaseStudyModal = (props) => {
         See case study
       </Button>
 
-      <Modal isOpen={isOpen} onClose={onClose} size="lg">
+      <Modal isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>{props.name} case study</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Center>{props.image}</Center>
+            <Flex justifyContent="center" mt="5">
+              <Box w="75%">{props.image}</Box>
+            </Flex>
+
             {props.brief}
             {props.contact}
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
+            <Button mr={3} onClick={onClose}>
               Close
             </Button>
           </ModalFooter>

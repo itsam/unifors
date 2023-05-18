@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>UNIFORS Case Studies</title>
+        <title>BIP in Liège</title>
       </Head>
       <NavBar />
       <SkipNavContent id="skip-nav"></SkipNavContent>

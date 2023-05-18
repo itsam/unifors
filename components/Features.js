@@ -29,37 +29,31 @@ export const Features = () => {
             px={6}
             rightIcon={<DownloadIcon h={4} w={4} />}
             onClick={() =>
-              window.open(
-                "https://infalia.com/unifors_files/UNIFORS_ISPS_Programme_v2.pdf",
-                "_blank"
-              )
+              window.open("/files/BIP_Agenda_17_05_23.pdf", "_blank")
             }
           >
-            Download the official agenda (updated)
+            Download the official agenda (updated 17/5)
           </Button>
         </Center>
         <Center>
           <Button
             w="lg"
             rounded={"full"}
-            colorScheme="red"
+            // colorScheme="blue"
             size={"lg"}
             fontWeight={"normal"}
             px={6}
             rightIcon={<DownloadIcon h={4} w={4} />}
             onClick={() =>
-              window.open(
-                "https://infalia.com/unifors_files/UNIFORS_Evaluation_Grid_for_C3_V03_MC.docx",
-                "_blank"
-              )
+              window.open("/files/BIP_evaluation_grid_teachers.docx", "_blank")
             }
           >
-            Download the evaluation grid (docx)
+            Download the evaluation grid (for teachers)
           </Button>
         </Center>
         <Text
           color={useColorModeValue("gray.600", "white")}
-          fontSize={"xl"}
+          fontSize={"2xl"}
           fontWeight="bold"
           pt="20"
         >

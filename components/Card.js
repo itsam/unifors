@@ -9,6 +9,7 @@ import {
   Button,
   Spacer,
   useColorModeValue,
+  Flex,
 } from "@chakra-ui/react";
 import { CaseStudyModal } from "./CaseStudyModal";
 
@@ -27,14 +28,14 @@ export const Card = (props) => {
       >
         <Box
           h={"210px"}
-          bg={useColorModeValue("blue.50", "gray.700")}
+          bg={useColorModeValue("gray.50", "gray.700")}
           mt={-6}
           mx={-6}
           mb={6}
-          pos={"relative"}
-          pt={6}
         >
-          <Center>{props.image}</Center>
+          <Flex h="full" p="5">
+            <Center>{props.image}</Center>
+          </Flex>
         </Box>
         <Stack>
           <Text
@@ -59,7 +60,7 @@ export const Card = (props) => {
             </Text>
           </Box>
         </Stack>
-        <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
+        <Stack direction={"row"} spacing={4} align={"center"}>
           <Text fontSize="xs">
             <a target="_blank" href={props.link} rel="noopener noreferrer">
               Visit the official site

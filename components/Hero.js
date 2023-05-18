@@ -35,7 +35,7 @@ export const Hero = () => {
   const router = useRouter();
   const buttonText = useBreakpointValue({
     base: "Take the survey",
-    sm: "Take the self evaluation survey",
+    sm: "Take the self evaluation survey first",
   });
   return (
     <>
@@ -46,7 +46,7 @@ export const Hero = () => {
           py={{ base: 20, md: 28 }}
           direction={{ base: "column", md: "row" }}
         >
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Stack flex={2} spacing={{ base: 5, md: 10 }}>
             <Heading
               as="h1"
               lineHeight={1.1}
@@ -67,23 +67,22 @@ export const Hero = () => {
                   zIndex: -1,
                 }}
               >
-                Intensive Week
+                Blended Intensive Program
               </Text>
               <br />
               <Text
                 as={"span"}
                 color={useColorModeValue("blue.600", "gray.300")}
               >
-                Case Studies
+                in Liège
               </Text>
             </Heading>
             <Text color={useColorModeValue("gray.900", "gray.50")}>
-              Five days (27 Sep - 01 Oct 2021) international intensive study
+              Seven days (21 May - 27 May 2023) international intensive study
               programme on soft skills developement to increase collaboration
               among business and academic sector for better employment of
               university graduates through active participation in{" "}
-              <strong>four real-life business case studies</strong>, in the
-              context of the <AboutModal />.
+              <strong>four real-life business case studies</strong>.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
@@ -99,12 +98,11 @@ export const Hero = () => {
               >
                 <Button
                   rounded={"full"}
-                  colorScheme="green"
-                  bg="green.600"
+                  colorScheme="red"
                   size={"lg"}
                   fontWeight={"normal"}
                   px={6}
-                  rightIcon={<CheckIcon h={4} w={4} />}
+                  leftIcon={<CheckIcon h={4} w={4} />}
                   onClick={() => router.push("/self-evaluation")}
                 >
                   {buttonText}
@@ -116,18 +114,18 @@ export const Hero = () => {
                     w={71}
                     position={"absolute"}
                     right={-71}
-                    top={"30px"}
+                    top={"50px"}
                   />
                   <Text
                     fontSize={"xl"}
                     fontFamily={"Caveat"}
                     color="red.700"
                     position={"absolute"}
-                    right={"-135px"}
-                    top={"0px"}
+                    right={"-115px"}
+                    top={"25px"}
                     transform={"rotate(16deg)"}
                   >
-                    post ISP
+                    for students
                   </Text>
                 </Box>
               </Stack>
@@ -149,7 +147,7 @@ export const Hero = () => {
                 src="/images/hero.svg"
                 width={820}
                 height={533}
-                alt="A green city landscape"
+                alt="Two students studying"
               />
             </Box>
           </Flex>

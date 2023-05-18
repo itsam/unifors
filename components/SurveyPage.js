@@ -259,7 +259,7 @@ const selfEvaluationSurvey = {
       ],
     },
   ],
-  cookieName: "unifors_self_evaluation_survey_final",
+  cookieName: "unifors_self_evaluation_survey_2023",
   showQuestionNumbers: "off",
   clearInvisibleValues: "none",
 };
@@ -270,7 +270,9 @@ function sendDataToServer(survey) {
   //initially
   //survey.sendResult("f24e7e6f-780c-44f0-a21a-3d6345f79f15");
   //at the end of the week
-  survey.sendResult("f869b761-3edc-4d1e-b136-0bad1b1c5ff0");
+  // survey.sendResult("f869b761-3edc-4d1e-b136-0bad1b1c5ff0");
+  //BIP2023
+  survey.sendResult("c78f4e9b-5785-44fb-997d-e6b754d77c42");
 }
 
 function onValueChanged(survey) {

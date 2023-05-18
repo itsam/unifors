@@ -7,10 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta
-            name="description"
-            content="UNIFORS project intensive week case studies"
-          />
+          <meta name="description" content="BIP in Liège" />
           <link rel="icon" href="/favicon.ico" />
 
           <link
