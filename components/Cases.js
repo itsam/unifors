@@ -214,7 +214,7 @@ const data = [
             px={6}
             mt={10}
             rightIcon={<DownloadIcon h={4} w={4} />}
-            onClick={() => window.open("/files/venturelab_case_study.pdf")}
+            onClick={() => window.open("/files/ventureLab_case_study.pdf")}
           >
             Download case study presentation (pdf)
           </Button>
