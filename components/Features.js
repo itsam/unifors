@@ -32,7 +32,7 @@ export const Features = () => {
               window.open("/files/BIP_Agenda_17_05_23.pdf", "_blank")
             }
           >
-            Download the official agenda (updated 17/5)
+            Download the official agenda
           </Button>
         </Center>
         <Center>
@@ -48,7 +48,7 @@ export const Features = () => {
               window.open("/files/BIP_evaluation_grid_teachers.docx", "_blank")
             }
           >
-            Download the evaluation grid (for teachers)
+            Download the evaluation grid
           </Button>
         </Center>
         <Text

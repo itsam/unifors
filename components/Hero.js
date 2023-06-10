@@ -85,7 +85,12 @@ export const Hero = () => {
               university graduates through active participation in{" "}
               <strong>four real-life business case studies</strong>.
             </Text>
-            <ReactPlayer controls url="/files/WEGIMONT_EDIT__EN_V2.mp4" />
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              controls
+              url="/files/WEGIMONT_EDIT__EN_V2.mp4"
+            />
 
             <Stack
               spacing={{ base: 4, sm: 6 }}
