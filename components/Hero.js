@@ -17,6 +17,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { CheckIcon } from "@chakra-ui/icons";
 import { AboutModal } from "./AboutModal";
+import ReactPlayer from "react-player";
 
 const Arrow = createIcon({
   displayName: "Arrow",
@@ -84,6 +85,8 @@ export const Hero = () => {
               university graduates through active participation in{" "}
               <strong>four real-life business case studies</strong>.
             </Text>
+            <ReactPlayer controls url="/files/WEGIMONT_EDIT__EN_V2.mp4" />
+
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}
